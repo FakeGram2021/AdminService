@@ -1,4 +1,4 @@
-FROM maven:3.8.1-adoptopenjdk-11 AS appServerBuild
+FROM nemanjajan/admin-maven:latest AS appServerBuild
 WORKDIR /usr/src/server
 COPY . .
 RUN --mount=type=cache,target=/root/.m2 mvn package -DskipTests
