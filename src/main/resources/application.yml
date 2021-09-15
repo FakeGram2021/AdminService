@@ -16,4 +16,6 @@ cassandra:
       load-balancing-policy:
         local-datacenter: datacenter1
 
-kafka.bootstrap.servers: localhost:9092
+kafka:
+  bootstrap:
+    servers: ${KAFKA_SERVER}
